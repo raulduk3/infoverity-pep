@@ -1,0 +1,130 @@
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+	align-items: flex-start;
+}
+
+.analytics-container,
+.review-container,
+.notification-container {
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+	gap: 0.5vmin;
+}
+
+.review-container {
+	gap: 2vmin;
+}
+
+.analytics-container h3,
+.review-container h3,
+.notification-container h3 {
+    margin: 0 0 0;
+	padding: 0vmin 0;
+}
+
+.notification-container > ul {
+	margin: 0 0;
+}
+
+.high {
+	color: #235347;
+}
+
+.mid {
+	color: #F1C40F;
+}
+
+.low {
+	color: #F71735;
+}
+
+.review-card {
+	display: flex;
+	flex-direction: column;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	color: black;
+	gap: 1vmin;
+	background-color: #EDEAE5;
+}
+
+.review-card > h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+}
+
+.review-card-controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 5px;
+	gap: 1vmin;
+}
+
+.review-card-approve {
+	color: white;
+	background-color: #235347;
+	border: 1px solid #235347;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.review-card-deny {
+	color: white;
+	background-color: #F71735;
+	border: 1px solid #F71735;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.review-card-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 1vmin;
+}
+
+.review-card-info > img {
+	align-self: flex-start;
+}
+
+.review-card-text > h4 {
+	margin: 0;
+	padding: 0;
+}
+
+.review-card-text > ul {
+	list-style: none;
+	margin: 0;
+	padding: 1vmin 2vmin 0 0;
+}
+
+.review-card-text > ul > li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Add specific styles for analytics graphs, review list, and notifications here */
+
+@media (min-width: 768px) {
+    .admin-dashboard {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .analytics-container,
+    .review-containeruu,
+    .notification-container {
+        flex-basis: calc(33% - 20px); /* Adjust according to layout */
+    }
+}
+
