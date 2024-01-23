@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Seller Dashboard - Sahara Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/dashboard-business.css" />
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+		<header class="header">
+			<a class="header-logo" href="splash.html">
+				<div class="logo">
+					<img class="logo-image" src="../images/LOGO-PEP-INFOVERITY.png" alt="Sahara Marketplace Logo" />
+					<h1>Sahara Marketplace</h1>
+				</div>
+			</a>
+			<p>Business Dashboard</p>
+			<div class="user-controls">
+				<a class="notification-bell">
+					<i class="far fa-bell"></i>
+				</a>
+				<a class="shopping-cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+				<a href="splash.html" class="login-register">Logout</a>
+			</div>	
+		</header>
+		<main class="main-content">
+            <!-- Business Dashboard Content -->
+            <section class="business-dashboard">
+                <!-- Inventory Management -->
+				<div class="inventory-container">
+                    <h3>Inventory Management</h3>
+                    <div class="inventory-list">
+                        <!-- Placeholder Inventory Items -->
+                        <div class="inventory-item">
+                            <span class="item-name">Item A</span>
+                            <span class="item-quantity">20 units</span>
+                            <button class="edit-item">Edit</button>
+                            <button class="remove-item">Remove</button>
+                        </div>
+                        <div class="inventory-item">
+                            <span class="item-name">Item B</span>
+                            <span class="item-quantity">15 units</span>
+                            <button class="edit-item">Edit</button>
+                            <button class="remove-item">Remove</button>
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                    <button class="add-item">Add New Item</button>
+                </div>                
+
+                <!-- Direct Communication Channel -->
+				<div class="communication-container">
+                    <h3>Customer Messages</h3>
+                    <div class="messages-list">
+                        <!-- Placeholder Messages -->
+                        <div class="message-item">
+                            <p class="customer-name">John Doe</p>
+                            <p class="message-text">Can you provide more details about Item A?</p>
+                            <button class="reply-button">Reply</button>
+                        </div>
+                        <div class="message-item">
+                            <p class="customer-name">Jane Smith</p>
+                            <p class="message-text">Is there a discount on bulk orders of Item B?</p>
+                            <button class="reply-button">Reply</button>
+                        </div>
+                        <!-- Add more messages as needed -->
+                    </div>
+                </div>
+                
+
+                <!-- Customizable Storefront -->
+                <div class="storefront-container">
+                    <h3>Customize Storefront</h3>
+                    <form class="storefront-form">
+                        <label for="store-name">Store Name:</label>
+                        <input type="text" id="store-name" placeholder="Your Store Name">
+                
+                        <label for="store-logo">Upload Logo:</label>
+                        <input type="file" id="store-logo">
+                
+                        <label for="store-layout">Choose Layout:</label>
+                        <select id="store-layout">
+                            <option value="layout1">Layout 1</option>
+                            <option value="layout2">Layout 2</option>
+                            <option value="layout3">Layout 3</option>
+                        </select>
+                
+                        <button type="submit" class="update-storefront">Update Storefront</button>
+                    </form>
+                </div>                
+
+                <!-- Marketing Insights -->
+                <div class="insights-container">
+                    <h3>Marketing Insights</h3>
+                    <div class="insight-item">
+                        <p><strong>Most Viewed Item:</strong> Item A</p>
+                    </div>
+                    <div class="insight-item">
+                        <p><strong>Highest Selling Item:</strong> Item B</p>
+                    </div>
+                    <div class="insight-item">
+                        <p><strong>Monthly Sales:</strong> $5,000</p>
+                    </div>
+                    <div class="insight-item">
+                        <p><strong>Total Customers:</strong> 150</p>
+                    </div>
+                    <!-- Add more insights as needed -->
+                </div>
+                
+                <!-- Shipping Integration -->
+                <div class="shipping-container">
+                    <h3>Shipping Management</h3>
+                    <div class="shipping-item">
+                        <p><strong>Order ID:</strong> 001 - <span class="shipping-status">Completed</span></p>
+                        <button class="track-shipment">Track</button>
+                    </div>
+                    <div class="shipping-item">
+                        <p><strong>Order ID:</strong> 002 - <span class="shipping-status">In Transit</span></p>
+                        <button class="track-shipment">Track</button>
+                    </div>
+                    <!-- Add more orders as needed -->
+                </div>
+                
+            </section>
+        </main>
+        <footer class="footer">
+            <div>Copyright © 2024 Sahara Marketplace Inc. All Rights Reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>
+

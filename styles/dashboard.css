@@ -20,6 +20,8 @@
 
 .review-container {
 	gap: 2vmin;
+	flex-basis: 50%;
+	flex-grow: 1;
 }
 
 .analytics-container h3,
@@ -46,6 +48,7 @@
 }
 
 .review-card {
+	width: -webkit-fill-available;
 	display: flex;
 	flex-direction: column;
     padding: 14px;
@@ -89,8 +92,8 @@
 .review-card-info {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	gap: 1vmin;
+	justify-content: flex-start;
+	gap: 1.8vmin;
 }
 
 .review-card-info > img {
@@ -99,7 +102,7 @@
 
 .review-card-text > h4 {
 	margin: 0;
-	padding: 0;
+	padding: 1vmin 0;
 }
 
 .review-card-text > ul {

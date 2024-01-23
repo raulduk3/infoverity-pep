@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Seller Dashboard - Sahara Marketplace</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/dashboard-personal.css" />
+    </head>
+    <body>
+        <div class="page-container">
+            <header class="header">
+                <a class="header-logo" href="splash.html">
+                    <div class="logo">
+                        <img class="logo-image" src="../images/LOGO-PEP-INFOVERITY.png" alt="Sahara Marketplace Logo" />
+                        <h1>Sahara Marketplace</h1>
+                    </div>
+                </a>
+                <p>Personal Seller Dashboard</p>
+                <div class="user-controls">
+                    <a class="notification-bell">
+                        <i class="far fa-bell"></i>
+                    </a>
+                    <a class="shopping-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="splash.html" class="login-register">Logout</a>
+                </div>
+            </header>
+			<main class="main-content">
+				<section class="seller-information">
+					<h3>Seller Profile</h3>
+					<div class="seller-profile">
+						<img src="https://placeholder.co/200" alt="Seller Profile Picture" class="profile-picture">
+						<div class="seller-details">
+							<p><strong>Name:</strong> Jane Doe</p>
+							<p><strong>Email:</strong> jane.doe@example.com</p>
+							<p><strong>Location:</strong> Chicago, IL</p>
+							<!-- Additional personal information can be added here -->
+						</div>
+					</div>
+				</section>	
+				<section class="seller-dashboard">
+					<!-- Listing Process -->
+					<div class="listing-container">
+						<h3>List an Item</h3>
+						<form class="listing-form">
+							<input type="text" placeholder="Item Name" required>
+							<input type="number" placeholder="Price" required>
+							<input type="text" placeholder="Size (optional)">
+							<input type="text" placeholder="Color (optional)">
+							<textarea placeholder="Description"></textarea>
+							<button type="submit">List Item</button>
+							<button type="submit">Add field</button>
+						</form>
+					</div>
+
+					<!-- Automated Stock Management -->
+					<div class="stock-container">
+						<h3>Your Listings</h3>
+						<!-- Sample listing -->
+						<div class="stock-item">
+							<span class="stock-item-name">Toy Train</span>
+							<span>Price: $15</span>
+							<select>
+								<option value="1">In Stock</option>
+								<option value="2">Out of Stock</option>
+							</select>
+						</div>
+						<!-- More listings will be dynamically added here -->
+					</div>
+				</section>
+			</main> 
+			<footer class="footer">
+                <div>Copyright © 2024 Sahara Marketplace Inc. All Rights Reserved.</div>
+            </footer>
+        </div>
+    </body>
+</html>
+

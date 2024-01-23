@@ -1,0 +1,128 @@
+.seller-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Listing Process Styles */
+.listing-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    gap: 0.5vmin;
+}
+
+.listing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+	align-items: center;
+}
+
+.listing-form input,
+.listing-form select,
+.listing-form textarea,
+.listing-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.listing-form button {
+    background-color: #235347;
+    color: white;
+    border: none;
+}
+
+/* Stock Management Styles */
+.stock-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5vmin;
+	flex-grow: 2;
+}
+
+.stock-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.stock-item:last-child {
+    border-bottom: none;
+}
+
+.stock-item-name {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .seller-dashboard {
+        flex-direction: row;
+    }
+}
+
+.seller-information {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+	flex-shrink: 1;
+	width: min-content;
+    gap: 10px;
+}
+
+.seller-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-picture {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.seller-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .seller-profile {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .profile-picture {
+        margin-right: 20px;
+    }
+
+    .seller-details {
+        align-items: flex-start;
+    }
+}
+
+.main-content {
+	gap: 2vmin;
