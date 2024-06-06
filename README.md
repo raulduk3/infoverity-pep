@@ -1,6 +1,6 @@
-# Sahara Marketplace Prototype Readme Overview
+# Sahara Marketplace Prototype 
 
-The Sahara Marketplace prototype, developed by Richard Alvarez at Kenyon College in 2024, is a comprehensive e-commerce platform designed to cater to diverse business and personal selling needs. This prototype showcases various functionalities, including inventory management, customer communication, storefront customization, and more.
+A comprehensive e-commerce platform designed to cater to diverse business and personal selling needs. This prototype showcases various functionalities, including inventory management, customer communication, storefront customization, and more.
 
 ## Features
  - Global Styles: The platform uses a Mobile First Approach with responsive design, ensuring seamless access across various devices. The styles are defined in global.css, providing a consistent look and feel across all pages.
